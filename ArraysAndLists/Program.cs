@@ -26,7 +26,8 @@ namespace ArraysAndLists
              *
              * Try to be creative in your display
              */
-            
+
+            Console.WriteLine("Let's Go!!!!!");
             ForEachLoop();
             ForLoop();
             
@@ -48,10 +49,8 @@ namespace ArraysAndLists
                 }else
                 {
                     oddList.Add(evenOrodd);
-                }
-                
+                }   
             }
-
             foreach (var listOfEvens in evenList)
             {
                 Console.WriteLine($"Even List: {listOfEvens}");
@@ -68,7 +67,7 @@ namespace ArraysAndLists
             var evenList = new List<int>();
             var oddList = new List<int>();
             Console.WriteLine($"This is for the for Loop");
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < intArray.Length; i++)
             {
                 int even = intArray[i] % 2;
                 if (even == 0)
@@ -78,7 +77,6 @@ namespace ArraysAndLists
                 {
                     oddList.Add(intArray[i]);
                 }
-                
                 
             }
             foreach (var listOfEvens in evenList)
